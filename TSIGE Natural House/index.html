@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kida Natural Products</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        🌿 TSIGE
+    </div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#products">Products</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>100% Natural Ethiopian Products</h1>
+
+<p>
+
+Pure Honey • Berbere • Niter Kibbeh • Shiro • Coffee
+
+</p>
+
+<a href="#products" class="btn">
+
+Shop Now
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search">
+
+<h2>Find Products</h2>
+
+<input
+type="text"
+placeholder="Search products..."
+id="searchBox">
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products" id="products">
+
+<h2>Our Products</h2>
+
+<div class="product-container">
+    <!-- Product 1 -->
+<div class="card">
+    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\honey.jpg" alt="Pure Honey">
+
+    <h3>Pure Honey</h3>
+
+    <div class="rating">
+        ⭐⭐⭐⭐⭐
+    </div>
+
+    <p>100% Natural Ethiopian Honey.</p>
+
+    <h4>1,200 ETB</h4>
+
+    <p class="phone">📞 +251 911 479 327</p>
+
+    <button onclick="buyProduct('Pure Honey')">
+        Order Now
+    </button>
+</div>
+
+<!-- Product 2 -->
+<div class="card">
+    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\berbere.jpg" alt="Berbere">
+
+    <h3>Berbere</h3>
+
+    <div class="rating">
+        ⭐⭐⭐⭐☆
+    </div>
+
+    <p>Fresh Homemade Ethiopian Berbere.</p>
+
+    <h4>350 ETB</h4>
+
+    <p class="phone">📞 +251 911 479 327</p>
+
+    <button onclick="buyProduct('Berbere')">
+        Order Now
+    </button>
+</div>
+
+<!-- Product 3 -->
+<div class="card">
+    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\niter.jpg" alt="Niter Kibbeh">
+
+    <h3>Niter Kibbeh</h3>
+
+    <div class="rating">
+        ⭐⭐⭐⭐⭐
+    </div>
+
+    <p>Traditional Ethiopian Spiced Butter.</p>
+
+    <h4>700 ETB</h4>
+
+    <p class="phone">📞 +251 911 479 327</p>
+
+    <button onclick="buyProduct('Niter Kibbeh')">
+        Order Now
+    </button>
+</div>
+
+<!-- Product 4 -->
+<div class="card">
+    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\shiro.jpg" alt="Shiro">
+
+    <h3>Shiro</h3>
+
+    <div class="rating">
+        ⭐⭐⭐⭐☆
+    </div>
+
+    <p>High Quality Ethiopian Shiro Powder.</p>
+
+    <h4>250 ETB</h4>
+
+    <p class="phone">📞 +251 911 479 327</p>
+
+    <button onclick="buyProduct('Shiro')">
+        Order Now
+    </button>
+</div>
+
+<!-- Product 5 -->
+<div class="card">
+    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\mitmita.jpg" alt="Mitmita">
+
+    <h3>Mitmita</h3>
+
+    <div class="rating">
+        ⭐⭐⭐⭐⭐
+    </div>
+
+    <p>Authentic Ethiopian Hot Spice.</p>
+
+    <h4>300 ETB</h4>
+
+    <p class="phone">📞 +251 911 479 327</p>
+
+    <button onclick="buyProduct('Mitmita')">
+        Order Now
+    </button>
+</div>
+
+<!-- Product 6 -->
+<div class="card">
+    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\coffee.jpg" alt="Coffee">
+
+    <h3>Ethiopian Coffee</h3>
+
+    <div class="rating">
+        ⭐⭐⭐⭐⭐
+    </div>
+
+    <p>Premium Ethiopian Coffee Beans.</p>
+
+    <h4>900 ETB</h4>
+
+    <p class="phone">📞 +251 911 479 327</p>
+
+    <button onclick="buyProduct('Coffee')">
+        Order Now
+    </button>
+</div>
+</div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-container">
+
+        <h2>About TSIGE</h2>
+
+        <p>
+            Welcome to <strong>TSIGE Natural Products</strong>. We provide fresh,
+            natural, and high-quality Ethiopian products including Pure Honey,
+            Berbere, Niter Kibbeh, Coffee, Shiro, and Mitmita.
+        </p>
+
+        <p>
+            Our goal is to deliver authentic Ethiopian products with excellent
+            quality and customer satisfaction.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Write your message..." required></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+    <div class="contact-info">
+
+        <p>📞 Phone: +251 911 479 327</p>
+
+        <p>📧 Email: your@email.com</p>
+
+        <p>📍 Addis Ababa, Ethiopia</p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 TSIGE Natural Products. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
