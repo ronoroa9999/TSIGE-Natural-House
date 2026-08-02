@@ -65,7 +65,7 @@ nav a:hover{
     height:100vh;
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("file:///C:/Users/elsha/OneDrive/Desktop/kida/image/background.png");
+    url("background.png");
     background-size:cover;
     background-position:center;
     display:flex;
