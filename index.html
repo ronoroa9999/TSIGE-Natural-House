@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kida Natural Products</title>
+    <title>TSIGE Natural House</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -18,17 +21,15 @@
 <header>
 
     <div class="logo">
-        🌿 TSIGE
+        🌿 TSIGE Natural House
     </div>
 
     <nav>
 
         <a href="#home">Home</a>
-
         <a href="#products">Products</a>
-
         <a href="#about">About</a>
-
+        <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
 
     </nav>
@@ -39,23 +40,19 @@
 
 <section class="hero" id="home">
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<h1>100% Natural Ethiopian Products</h1>
+        <h1>100% Natural Ethiopian Products</h1>
 
-<p>
+        <p>
+            Pure Honey • Berbere • Niter Kibbeh • Coffee • Shiro • Mitmita
+        </p>
 
-Pure Honey • Berbere • Niter Kibbeh • Shiro • Coffee
+        <a href="#products" class="btn">
+            Shop Now
+        </a>
 
-</p>
-
-<a href="#products" class="btn">
-
-Shop Now
-
-</a>
-
-</div>
+    </div>
 
 </section>
 
@@ -63,12 +60,12 @@ Shop Now
 
 <section class="search">
 
-<h2>Find Products</h2>
+    <h2>Find Your Favorite Product</h2>
 
-<input
-type="text"
-placeholder="Search products..."
-id="searchBox">
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="Search products...">
 
 </section>
 
@@ -79,154 +76,216 @@ id="searchBox">
 <h2>Our Products</h2>
 
 <div class="product-container">
-    <!-- Product 1 -->
+
+<!-- Honey -->
+
 <div class="card">
-    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\honey.jpg" alt="Pure Honey">
 
-    <h3>Pure Honey</h3>
+<img src="image/honey.jpg" alt="Honey">
 
-    <div class="rating">
-        ⭐⭐⭐⭐⭐
-    </div>
+<h3>Pure Honey</h3>
 
-    <p>100% Natural Ethiopian Honey.</p>
-
-    <h4>1,200 ETB</h4>
-
-    <p class="phone">📞 +251 911 479 327</p>
-
-    <button onclick="buyProduct('Pure Honey')">
-        Order Now
-    </button>
+<div class="rating">
+★★★★★
 </div>
 
-<!-- Product 2 -->
+<p>100% Pure Ethiopian Honey.</p>
+
+<h4>1200 ETB</h4>
+
+<button onclick="buyProduct('Pure Honey')">
+Order Now
+</button>
+
+</div>
+
+<!-- Berbere -->
+
 <div class="card">
-    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\berbere.jpg" alt="Berbere">
 
-    <h3>Berbere</h3>
+<img src="image/berbere.jpg" alt="Berbere">
 
-    <div class="rating">
-        ⭐⭐⭐⭐☆
-    </div>
+<h3>Berbere</h3>
 
-    <p>Fresh Homemade Ethiopian Berbere.</p>
-
-    <h4>350 ETB</h4>
-
-    <p class="phone">📞 +251 911 479 327</p>
-
-    <button onclick="buyProduct('Berbere')">
-        Order Now
-    </button>
+<div class="rating">
+★★★★★
 </div>
 
-<!-- Product 3 -->
+<p>Fresh Homemade Berbere.</p>
+
+<h4>350 ETB</h4>
+
+<button onclick="buyProduct('Berbere')">
+Order Now
+</button>
+
+</div>
+
+<!-- Niter -->
+
 <div class="card">
-    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\niter.jpg" alt="Niter Kibbeh">
 
-    <h3>Niter Kibbeh</h3>
+<img src="image/niter.jpg" alt="Niter">
 
-    <div class="rating">
-        ⭐⭐⭐⭐⭐
-    </div>
+<h3>Niter Kibbeh</h3>
 
-    <p>Traditional Ethiopian Spiced Butter.</p>
-
-    <h4>700 ETB</h4>
-
-    <p class="phone">📞 +251 911 479 327</p>
-
-    <button onclick="buyProduct('Niter Kibbeh')">
-        Order Now
-    </button>
+<div class="rating">
+★★★★★
 </div>
 
-<!-- Product 4 -->
+<p>Traditional Ethiopian Spiced Butter.</p>
+
+<h4>700 ETB</h4>
+
+<button onclick="buyProduct('Niter Kibbeh')">
+Order Now
+</button>
+
+</div>
+
+<!-- Shiro -->
+
 <div class="card">
-    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\shiro.jpg" alt="Shiro">
 
-    <h3>Shiro</h3>
+<img src="image/shiro.jpg" alt="Shiro">
 
-    <div class="rating">
-        ⭐⭐⭐⭐☆
-    </div>
+<h3>Shiro</h3>
 
-    <p>High Quality Ethiopian Shiro Powder.</p>
-
-    <h4>250 ETB</h4>
-
-    <p class="phone">📞 +251 911 479 327</p>
-
-    <button onclick="buyProduct('Shiro')">
-        Order Now
-    </button>
+<div class="rating">
+★★★★★
 </div>
 
-<!-- Product 5 -->
+<p>Premium Ethiopian Shiro.</p>
+
+<h4>250 ETB</h4>
+
+<button onclick="buyProduct('Shiro')">
+Order Now
+</button>
+
+</div>
+
+<!-- Coffee -->
+
 <div class="card">
-    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\mitmita.jpg" alt="Mitmita">
 
-    <h3>Mitmita</h3>
+<img src="image/coffee.jpg" alt="Coffee">
 
-    <div class="rating">
-        ⭐⭐⭐⭐⭐
-    </div>
+<h3>Ethiopian Coffee</h3>
 
-    <p>Authentic Ethiopian Hot Spice.</p>
-
-    <h4>300 ETB</h4>
-
-    <p class="phone">📞 +251 911 479 327</p>
-
-    <button onclick="buyProduct('Mitmita')">
-        Order Now
-    </button>
+<div class="rating">
+★★★★★
 </div>
 
-<!-- Product 6 -->
+<p>Fresh Ethiopian Coffee Beans.</p>
+
+<h4>900 ETB</h4>
+
+<button onclick="buyProduct('Coffee')">
+Order Now
+</button>
+
+</div>
+
+<!-- Mitmita -->
+
 <div class="card">
-    <img src="C:\Users\elsha\OneDrive\Desktop\kida\image\coffee.jpg" alt="Coffee">
 
-    <h3>Ethiopian Coffee</h3>
+<img src="image/mitmita.jpg" alt="Mitmita">
 
-    <div class="rating">
-        ⭐⭐⭐⭐⭐
-    </div>
+<h3>Mitmita</h3>
 
-    <p>Premium Ethiopian Coffee Beans.</p>
-
-    <h4>900 ETB</h4>
-
-    <p class="phone">📞 +251 911 479 327</p>
-
-    <button onclick="buyProduct('Coffee')">
-        Order Now
-    </button>
+<div class="rating">
+★★★★★
 </div>
+
+<p>Authentic Ethiopian Mitmita.</p>
+
+<h4>300 ETB</h4>
+
+<button onclick="buyProduct('Mitmita')">
+Order Now
+</button>
+
 </div>
+
+</div>
+
 </section>
-
 <!-- ================= ABOUT ================= -->
 
 <section class="about" id="about">
 
     <div class="about-container">
 
-        <h2>About TSIGE</h2>
+        <h2>About TSIGE Natural House</h2>
 
         <p>
-            Welcome to <strong>TSIGE Natural Products</strong>. We provide fresh,
-            natural, and high-quality Ethiopian products including Pure Honey,
-            Berbere, Niter Kibbeh, Coffee, Shiro, and Mitmita.
+            TSIGE Natural House provides high-quality Ethiopian natural products
+            including Pure Honey, Berbere, Niter Kibbeh, Coffee, Shiro and
+            Mitmita. We are committed to delivering fresh, healthy and trusted
+            products directly to our customers.
         </p>
 
-        <p>
-            Our goal is to deliver authentic Ethiopian products with excellent
-            quality and customer satisfaction.
-        </p>
+        <div class="about-boxes">
+
+            <div class="box">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>100% Natural</h3>
+                <p>Fresh products with no artificial ingredients.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable delivery around Addis Ababa.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Trusted Quality</h3>
+                <p>Your satisfaction is our priority.</p>
+            </div>
+
+        </div>
 
     </div>
+
+</section>
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="reviews" id="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="review-container">
+
+<div class="review-card">
+★★★★★
+<p>
+"The honey is pure and delicious. Highly recommended!"
+</p>
+<h4>- Sara</h4>
+</div>
+
+<div class="review-card">
+★★★★★
+<p>
+"Very fresh Berbere with amazing aroma."
+</p>
+<h4>- Dawit</h4>
+</div>
+
+<div class="review-card">
+★★★★★
+<p>
+"Fast delivery and excellent customer service."
+</p>
+<h4>- Hana</h4>
+</div>
+
+</div>
 
 </section>
 
@@ -234,45 +293,100 @@ id="searchBox">
 
 <section class="contact" id="contact">
 
-    <h2>Contact Us</h2>
+<h2>Contact Us</h2>
 
-    <form id="contactForm">
+<form>
 
-        <input type="text" placeholder="Your Name" required>
+<input type="text" placeholder="Your Name" required>
 
-        <input type="email" placeholder="Your Email" required>
+<input type="email" placeholder="Your Email" required>
 
-        <textarea placeholder="Write your message..." required></textarea>
+<textarea placeholder="Write your message..." required></textarea>
 
-        <button type="submit">
-            Send Message
-        </button>
+<button type="submit">
+Send Message
+</button>
 
-    </form>
+</form>
 
-    <div class="contact-info">
+<div class="contact-info">
 
-        <p>📞 Phone: +251 911 479 327</p>
+<p>
+📞 +251 911 479 327
+</p>
 
-        <p>📧 Email: your@email.com</p>
+<p>
+📍 አዲስ አበባ ወሰን ሂልሳይድ
+</p>
 
-        <p>📍 Addis Ababa, Ethiopia</p>
+<p>
+📧 tsigenaturalhouse@gmail.com
+</p>
 
-    </div>
+</div>
 
 </section>
+
+<!-- ================= ORDER POPUP ================= -->
+
+<div id="orderPopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closePopup()">
+&times;
+</span>
+
+<h2 id="productTitle">
+Order Product
+</h2>
+
+<p>
+How would you like to order?
+</p>
+
+<a id="whatsappBtn" target="_blank" class="popup-btn whatsapp">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+<a href="tel:+251911479327" class="popup-btn call">
+
+<i class="fa-solid fa-phone"></i>
+
+Call Us
+
+</a>
+
+<div class="popup-btn location">
+
+<i class="fa-solid fa-location-dot"></i>
+
+አዲስ አበባ ወሰን ሂልሳይድ
+
+</div>
+
+</div>
+
+</div>
 
 <!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <p>
-        © 2026 TSIGE Natural Products. All Rights Reserved.
-    </p>
+<p>
+
+© 2026 TSIGE Natural House. All Rights Reserved.
+
+</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>

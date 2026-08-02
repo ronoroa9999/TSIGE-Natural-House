@@ -1,42 +1,161 @@
-// Order Button
-function buyProduct(productName) {
-    alert("Thank you for choosing " + productName + "!\n\nPlease contact us to place your order.");
+// ===============================
+// SEARCH PRODUCTS
+// ===============================
+
+const searchBox = document.getElementById("searchBox");
+
+if (searchBox) {
+
+searchBox.addEventListener("keyup", function () {
+
+const searchValue = searchBox.value.toLowerCase();
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+
+const product = card.querySelector("h3").textContent.toLowerCase();
+
+if (product.includes(searchValue)) {
+
+card.style.display = "block";
+
+} else {
+
+card.style.display = "none";
+
 }
 
-// Contact Form
-const contactForm = document.getElementById("contactForm");
-
-contactForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    alert("✅ Thank you! Your message has been sent successfully.");
-
-    contactForm.reset();
 });
 
-// Smooth animation when scrolling
-const sections = document.querySelectorAll("section");
-
-window.addEventListener("scroll", () => {
-    sections.forEach(section => {
-        const position = section.getBoundingClientRect().top;
-        const screen = window.innerHeight;
-
-        if (position < screen - 150) {
-            section.style.opacity = "1";
-            section.style.transform = "translateY(0)";
-        }
-    });
 });
 
-// Set initial animation
-sections.forEach(section => {
-    section.style.opacity = "0";
-    section.style.transform = "translateY(50px)";
-    section.style.transition = "all 0.8s ease";
+}
+
+// ===============================
+// ORDER POPUP
+// ===============================
+
+const popup = document.getElementById("orderPopup");
+
+const productTitle = document.getElementById("productTitle");
+
+const whatsappBtn = document.getElementById("whatsappBtn");
+
+function buyProduct(productName) {
+
+productTitle.innerHTML = "Order " + productName;
+
+const message =
+"Hello TSIGE Natural House,%0A%0AI would like to order:%0A" +
+productName +
+"%0A%0APlease provide more information.";
+
+whatsappBtn.href =
+"https://wa.me/251911479327?text=" + message;
+
+popup.style.display = "block";
+
+}
+
+// ===============================
+// CLOSE POPUP
+// ===============================
+
+function closePopup() {
+
+popup.style.display = "none";
+
+}
+
+// ===============================
+// CLOSE WHEN CLICK OUTSIDE
+// ===============================
+
+window.onclick = function (event) {
+
+if (event.target == popup) {
+
+popup.style.display = "none";
+
+}
+
+};
+
+// ===============================
+// ESC KEY CLOSE
+// ===============================
+
+document.addEventListener("keydown", function (event) {
+
+if (event.key === "Escape") {
+
+popup.style.display = "none";
+
+}
+
 });
 
-// Hero section should appear immediately
-const hero = document.querySelector(".hero");
-hero.style.opacity = "1";
-hero.style.transform = "translateY(0)";
+// ===============================
+// CONTACT FORM
+// ===============================
+
+const form = document.querySelector("form");
+
+if (form) {
+
+form.addEventListener("submit", function (e) {
+
+e.preventDefault();
+
+alert("✅ Thank you! Your message has been sent.");
+
+form.reset();
+
+});
+
+}
+
+// ===============================
+// SMOOTH SCROLL
+// ===============================
+
+document.querySelectorAll("nav a").forEach(link => {
+
+link.addEventListener("click", function (e) {
+
+e.preventDefault();
+
+const target = document.querySelector(this.getAttribute("href"));
+
+window.scrollTo({
+
+top: target.offsetTop - 70,
+
+behavior: "smooth"
+
+});
+
+});
+
+});
+
+// ===============================
+// HEADER SHADOW
+// ===============================
+
+window.addEventListener("scroll", function () {
+
+const header = document.querySelector("header");
+
+if (window.scrollY > 40) {
+
+header.style.boxShadow = "0 10px 25px rgba(0,0,0,.2)";
+
+} else {
+
+header.style.boxShadow = "0 5px 20px rgba(0,0,0,.15)";
+
+}
+
+});
