@@ -66,7 +66,7 @@ nav a:hover{
     color:#fff;
     background:
     linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("image/background.jpg");
+    url("image/Background.png");
     background-size:cover;
     background-position:center;
 }
